@@ -10,12 +10,7 @@
 
   <div class="card">
     <h1 id="title">Hei Salla!</h1>
-    <div class="gallery" id="gallery" style="display: none;">
-      <img src="1000004921.jpeg" alt="kuva 1">
-      <img src="DSC_0610.jpg" alt="kuva 2">
-      <img src="OI000077.JPG" alt="kuva 3">
-      <img src="img15.jpeg" alt="kuva 4">
-    </div>
+    <img id="cardImage" src="salla.JPG" alt="kortin kuva" class="card-image">
     <div id="message">Paina alla olevaa nappia</div>
     <button id="myButton" onclick="showMessage()">Nappi</button>
   </div>
@@ -27,7 +22,7 @@
         "Hyvää synttäriä Salla💙 Ihailen sua niin paljon, oot ruton cool, upea ja rohkea!";
       document.getElementById("title").style.display = "none";
       document.getElementById("myButton").style.display = "none";
-      document.getElementById("gallery").style.display = "grid";
+      document.getElementById("cardImage").style.display = "block";
     }
   </script>
 </body>

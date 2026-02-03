@@ -41,26 +41,6 @@ button:hover {
   background-color: rgb(2, 7, 141);
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.gallery img:hover {
-  transform: scale(1.05);
-}
 
 .card-image {
   display: none;
