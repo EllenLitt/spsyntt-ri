@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #c9d7f8, #68a6fe);
+  font-family: 'Fredoka One', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -17,7 +17,12 @@ body {
 }
 
 h1 {
-  color: #e91e63;
+  color: rgb(2, 7, 141);
+  font-size: 2.5em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin: 0;
+  transform: skewX(-3deg);
 }
 
 button {
@@ -25,14 +30,36 @@ button {
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
-  background-color: #e91e63;
+  background-color: rgb(2, 7, 141);
   color: white;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Fredoka One', sans-serif;
 }
 
 button:hover {
-  background-color: #c2185b;
+  background-color: rgb(2, 7, 141);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
 }
 
 .card-image {
