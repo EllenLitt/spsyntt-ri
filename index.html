@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>kortti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1 id="title">hei rakas</h1>
+    <img id="cardImage" src="kuva.jpeg" alt="kortin kuva" class="card-image">
+    <div id="message">paina tuota nappia tai tiiät ettet oo painanu</div>
+    <button id="myButton" onclick="showMessage()">tämä on nappi</button>
+  </div>
+
+  <script>
+    function showMessage() {
+      console.log("Nappia painettiin!");
+      document.getElementById("message").innerText =
+        "olet rakaskultamuruihanahanipuppeli jeejee";
+      document.getElementById("title").style.display = "none";
+      document.getElementById("myButton").style.display = "none";
+      document.getElementById("cardImage").style.display = "block";
+    }
+  </script>
+</body>
+</html>
